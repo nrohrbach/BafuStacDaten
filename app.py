@@ -28,7 +28,7 @@ AnteilMigriert = f"{AnteilMigriert}%  der BAFU Layer sind auf STAC."
 
 # App
 # Streamlit app
-st.header("BAFU Geodaten welche noch nicht in die STAC API migriert wurden",divider='red')
+st.header("BAFU Layer in STAC",divider='red')
 st.markdown("Das BAFU migriert alle Geodaten in der BGDI in die STAC API. Diese Applikation zeigt auf, welche Layer noch migriert werden müssen.")
 st.subheader("Anteil bereits migrierter Layer")
 st.badge(AnteilMigriert, color="green")
