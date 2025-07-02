@@ -35,3 +35,4 @@ st.badge(AnteilMigriert, color="green")
 
 st.subheader("Layer welche noch nicht migriert sind")
 st.dataframe(dfLayers_filtered)  
+st.markdown("Merci Team Zaga und Team KOGIS für den Einsatz.")
