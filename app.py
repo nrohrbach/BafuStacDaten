@@ -31,7 +31,7 @@ AnteilMigriert = f"{AnteilMigriert}%  der BAFU Layer sind auf STAC."
 st.header("BAFU Geodaten welche noch nicht in die STAC API migriert wurden",divider='red')
 st.markdown("Das BAFU migriert alle Geodaten in der BGDI in die STAC API. Diese Applikation zeigt auf, welche Layer noch migriert werden müssen.")
 st.subheader("Anteil bereits migrierter Layer")
-st.badge(AnteilMigriert, color="green", width=20)
+st.badge(AnteilMigriert, color="green")
 
 st.subheader("Layer welche noch nicht migriert sind")
 st.dataframe(dfLayers_filtered)  
