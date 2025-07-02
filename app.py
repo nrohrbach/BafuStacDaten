@@ -24,7 +24,7 @@ dfLayers_filtered = dfLayers[~dfLayers['downloadUrl'].str.contains("https://data
 # Anteil der noch nicht migrierten Layer berechnen
 AnteilMigriert = len(dfLayers_filtered) / len(dfLayers) * 100
 AnteilMigriert = round(AnteilMigriert)
-AnteilMigriert = f"{AnteilMigriert}% der BAFU Layer sind auf STAC."
+AnteilMigriert = f"{AnteilMigriert}  der BAFU Layer sind auf STAC."
 
 # App
 # Streamlit app
