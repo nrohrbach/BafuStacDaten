@@ -21,6 +21,10 @@ for layer in response['layers']:
 dfLayers = pd.DataFrame(Layers)
 dfLayers_filtered = dfLayers[~dfLayers['downloadUrl'].str.contains("https://data.geo.admin.ch/browser")]
 
+# Anteil der noch nicht migrierten Layer berechnen
+AnteilMigriert = len(dfLayers_filtered) / len(dfLayers) * 100
+AnteilMigriert = round(AnteilMigriert)
+
 # App
 # Streamlit app
 st.title("BAFU Geodaten welche noch nicht in die STAC API migriert wurden")
