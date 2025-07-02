@@ -26,6 +26,7 @@ dfLayers_filtered = dfLayers[~dfLayers['downloadUrl'].str.contains("https://data
 st.title("BAFU Geodaten welche noch nicht in die STAC API migriert wurden")
 st.markdown("Das BAFU migriert alle Geodaten in der BGDI in die STAC API. Diese Applikation zeigt auf, welche Layer noch migriert werden müssen.")
 st.subheader("Anteil bereits migrierter Layer")
-st.badge("xyss", color="blue")
+st.badge("{AnteilMigriert}%", color="blue")
 
+st.subheader("Layer welche noch nicht migriert sind")
 st.dataframe(dfLayers_filtered)  
