@@ -22,7 +22,7 @@ dfLayers = pd.DataFrame(Layers)
 dfLayers_filtered = dfLayers[~dfLayers['downloadUrl'].str.contains("https://data.geo.admin.ch/browser")]
 
 # Anteil der noch nicht migrierten Layer berechnen
-AnteilMigriert = len(dfLayers_filtered) / len(dfLayers) * 100
+AnteilMigriert = 100- len(dfLayers_filtered) / len(dfLayers) * 100
 AnteilMigriert = round(AnteilMigriert)
 AnteilMigriert = f"{AnteilMigriert}%  der BAFU Layer sind auf STAC."
 
